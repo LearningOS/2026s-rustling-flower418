@@ -4,6 +4,7 @@
 
 
 pub fn animal_habitat(animal: &str) -> &'static str {
+    // 生命周期在整个程序都有效
     let identifier = if animal == "crab" {
         1
     } else if animal == "gopher" {
